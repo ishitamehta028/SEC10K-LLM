@@ -42,3 +42,18 @@ Loading the script for a specific ticker can take upto 5 minutes, hence a cachin
    HYPOTHESIS - Using the latest report from 2023, qualitative and quantitative questions can be answered related to sales and profit margins. These QA are also visualized in the graphs. 
 
 
+## Output
+### Dashboard UI 
+![dashboard](dashboard.png)
+### Output
+![text](generation.png)
+#### 1. Document comparison for similarity scores
+![doc_sim](doc_sim.png)
+#### 2. Sentiment Analysis using FinBERT
+![sent](sentiment_finbert.png)
+#### 3. QAengine
+![qa](qa_plot.png)
+
+
+
+
