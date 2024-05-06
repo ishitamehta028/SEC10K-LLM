@@ -4,6 +4,8 @@ The script generates visualizations and text summaries for 3 companies- AAPL, AD
 
 The script for generating insights is written in Python and the interactive dashboard is based on React. Flask is used to expose the endpoint for calling API and generating requests.
 
+The original script was written in Colab and can be accessed at https://colab.research.google.com/drive/1kRoOMOAwvDZ7Ockm1xwCELF5BpUy9PDO?authuser=1#scrollTo=oJd--nQF4Xis
+
 ## Introduction
 The Form 10-K reports are typically long documents, while specific downstream analysis only relies on one or a few Item sections rather than utilizing the entire document. 
 It is more suitable to apply NLP techniques on those specific Item sections while dropping other uninformative Item sections. Here, the script uses the sec-edgar package to download the filings from 1995 - 2023 for the company ticker as specified and generates insights.
