@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  margin: 5px 20px 0 20px;
+  font-family: Garamond, serif;
+}
+
+
+.App-header {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #404040;
+}
+
+h5 {
+  color: #787878;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 0.1px;
+  font-style: italic;
+  font-family: 'Calibri, sans-serif';
+}
+
+h3 {
+  color: #787878;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 0.1px;
+  font-style: italic;
+  font-family: 'Calibri, sans-serif';
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"]
+{
+
+  margin-right: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+select {
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  border: 2px solid #90e0ef;;
+  border-radius: 5px;
+  width: 80%;
+  background-position: right 10px top 50%;
+  background-size: 14px auto;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 16px;
+  color: '#686868';
+  font-style: 'italic';
+}
+
+select option {
+  font-family: Arial, sans-serif;
+  font-size: 14px; 
+  background-color: #ffffff; 
+  color: #333333; 
+  border: 2px solid #00b4d8;
+}
+
+
+
+button {
+  display: block; 
+  margin: 20px auto; 
+  padding: 12px 30px;
+  width: 30%;
+  background-color: #00b4d8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #90e0ef;
+}
