@@ -41,6 +41,30 @@ Loading the script for a specific ticker can take upto 5 minutes, hence a cachin
    Uses the latest report to answer qualitative and quantitative questions related to sales and profit margins using distilbert. Visualizes the QA results for easy interpretation. 
    HYPOTHESIS - Using the latest report from 2023, qualitative and quantitative questions can be answered related to sales and profit margins. These QA are also visualized in the graphs. 
 
+## Installation and Usage Guide
+### 1. Clone the Repository:
+```
+git clone <https://github.com/ishitamehta028/SEC10K-LLM>
+```
+
+### 2. Navigate to the Source Folder:
+```
+cd SEC10K-LLM/app/src
+```
+### 3. Install Dependencies:
+```
+pip install -r requirements.txt
+
+```
+### 4. Start the React Server:
+```
+npm start
+```
+### 5. Start the Python Flask Server:
+```
+python main.py
+```
+Access the application by navigating to http://localhost:3000
 
 ## Output
 ### Dashboard UI 
