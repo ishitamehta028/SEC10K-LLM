@@ -21,9 +21,9 @@ Loading the script for a specific ticker can take upto 5 minutes, hence a cachin
   React - React is dynamic, responsive, provides great UI, is versatile and is easy to integrate with backend APIs
  - ### Backend:
   Python: Python is an incredibly powerful language for data-extraction, managing, preprocessing and handling. Additionally, the packages make it convenient to call powerful ML models and APIs. Here data extraction, cleaning, merging, analysing, plotting, generating insights. To interface with the backend, Flask is used that helps expose endpoints. 
- - Libraries for cleaning and merging - Beautiful Soup, re, os, HTML, datetime, spacy, nltk
- - Libraries for generating insights = numpy, matplotlib
- - Libraries for calling HuggingFace API - requests, pipeline, tokenizer, transformers 
+ - Libraries for cleaning and merging : Beautiful Soup, re, os, HTML, datetime, spacy, nltk
+ - Libraries for generating insights : numpy, matplotlib
+ - Libraries for calling HuggingFace API : requests, pipeline, tokenizer, transformers 
  - Libraries for exposing endpoint : Flask, JSONify, string
 
 
