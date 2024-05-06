@@ -10,7 +10,7 @@ It is more suitable to apply NLP techniques on those specific Item sections whil
 
 10-K Data is extracted from SEC-EDGAR website, and Item 7. MD&A is extracted for all 10-K filings, cleaned and merged into a dictionary with years as keys. Then LLM APIs are called to generate insights and visualizations. This can be accessed via a dashboard which is built in React.
 
-Financial NLP is used to perform 3 tasks via calling LLM Inference API from HuggingFace. These are document comparison for similarity checking, sentiment analysis on financial text and QA-engine for answering questions related to text.
+Financial NLP is used to perform 3 tasks via calling LLM Inference API from HuggingFace. These are  - document comparison for similarity checking, sentiment analysis on financial text and QA-engine for answering questions related to text.
 
 Loading the script for a specific ticker can take upto 5 minutes, hence a caching system is used to pre-load the output and store in directory with the ticker name. The dashboard prints the output from pre-loaded visualizations.
 
@@ -29,11 +29,16 @@ Loading the script for a specific ticker can take upto 5 minutes, hence a cachin
 
 
 ## Functionality
-   ### 1.   Consecutive Document Comparison : 
+   ### 1.   Consecutive Document Comparison for similarity scoring : 
    Compares each consecutive year's MD&A for language similarity and visualizes the similarity scores alongside stock prices using sentence transformers model MiniLM.
-   ### 2.   Sentiment Analysis: 
+   HYPOTHESIS - As per Lazy Prices, a paper proposed by Cohen et al., asserts that when companies make active and significant changes in their reporting, this provides an important signal about future performance. I have compared each consecutive year’s MD&A for language with the previous one and checked for similarity index. Lower the similarity score would ideally indicate major changes in the company and should be indicated by more positive returns on stock prices. Similarity scores generated via comparison are visualized here along with their stock prices.
+
+   ### 2.   Sentiment Analysis on Financial text: 
    Analyzes sentiments in the MD&A texts and plots sentiment scores along with polarity scores to indicate positive, negative, and neutral sentiments and polarity of MD&A texts for all years.
-   ### 3.   Question-Answering: 
+   HYPOTHESIS - Since 10-Ks are forward-looking documents, the sentiments in them are indicative of the company's financial performance, business strategies, and future prospects. Negative sentiments may indicate risks or weaknesses while positive sentiments may indicate optimism and areas of strength. Neutral sentiments are generally factual and objective.
+
+   ### 3.   Question-Answering Engine: 
    Uses the latest report to answer qualitative and quantitative questions related to sales and profit margins using distilbert. Visualizes the QA results for easy interpretation. 
+   HYPOTHESIS - Using the latest report from 2023, qualitative and quantitative questions can be answered related to sales and profit margins. These QA are also visualized in the graphs. 
 
 
