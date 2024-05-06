@@ -37,6 +37,7 @@ Loading the script for a specific ticker can take upto 5 minutes, hence a cachin
    Compares each consecutive year's MD&A for language similarity and visualizes the similarity scores alongside stock prices using sentence transformers model MiniLM.
    HYPOTHESIS - As per Lazy Prices, a paper proposed by Cohen et al., asserts that when companies make active and significant changes in their reporting, this provides an important signal about future performance. I have compared each consecutive year’s MD&A for language with the previous one and checked for similarity index. Lower the similarity score would ideally indicate major changes in the company and should be indicated by more positive returns on stock prices. Similarity scores generated via comparison are visualized here along with their stock prices.
 
+
    ### 2.   Sentiment Analysis on Financial text: 
    Analyzes sentiments in the MD&A texts and plots sentiment scores along with polarity scores to indicate positive, negative, and neutral sentiments and polarity of MD&A texts for all years.
    HYPOTHESIS - Since 10-Ks are forward-looking documents, the sentiments in them are indicative of the company's financial performance, business strategies, and future prospects. Negative sentiments may indicate risks or weaknesses while positive sentiments may indicate optimism and areas of strength. Neutral sentiments are generally factual and objective.
