@@ -6,6 +6,8 @@ The script for generating insights is written in Python and the interactive dash
 
 The original script was written in Colab and can be accessed at https://colab.research.google.com/drive/1kRoOMOAwvDZ7Ockm1xwCELF5BpUy9PDO?authuser=1#scrollTo=oJd--nQF4Xis
 
+To view a demo of the deployment, visit this link for video : https://www.loom.com/share/6072bfbb726f4d83868bd00d9babe6ce?sid=bd85e9d7-f22d-4b8d-9ad1-edb02b652132 
+
 ## Introduction
 The Form 10-K reports are typically long documents, while specific downstream analysis only relies on one or a few Item sections rather than utilizing the entire document. 
 It is more suitable to apply NLP techniques on those specific Item sections while dropping other uninformative Item sections. Here, the script uses the sec-edgar package to download the filings from 1995 - 2023 for the company ticker as specified and generates insights.
