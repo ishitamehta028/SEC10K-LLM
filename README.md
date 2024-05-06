@@ -64,7 +64,7 @@ npm start
 ```
 ### 5. Start the Python Flask Server:
 ```
-python main.py
+python app.py
 ```
 Access the application by navigating to http://localhost:3000
 
